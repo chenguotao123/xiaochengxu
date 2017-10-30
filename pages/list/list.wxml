@@ -1,0 +1,36 @@
+<view class="container">
+	<view class="search-box">
+		<input class="input-search" bindinput="bindInput" placeholder="请输入电影名称" value="{{ inputSearch }}"/>
+        <!-- <button class="btn-search" bindtap="searchTap">搜索</button> -->
+        <text class="btn-search" bindtap="searchTap">搜索</text>
+	</view>
+	<view class="item">
+		<view class="item-list" wx:for="{{ arrList }}" data-movieid="{{ item.id }}" bindtap="goDetails">
+			<image class="item-image" src="{{ item.images.large }}" mode="aspectFit"></image>
+			<view class="item-cont">
+				<text>电影名：{{ item.title }}</text>
+				<text>剧种：{{ item.genres }}
+				</text>
+				<text>年份：{{ item.year }}</text>
+			</view>
+		</view>
+		<view class="tishi" wx:if="{{ botShow }}">到底了...</view>
+		<!-- <view class="item-list">
+			<image class="item-image" src="../../images/a.jpg" mode="aspectFit"></image>
+			<view class="item-cont">
+				<text>电影名：1111111</text>
+				<text>导演：222222</text>
+				<text>年份：2017</text>
+			</view>
+		</view>
+		<view class="item-list">
+			<image class="item-image" src="../../images/a.jpg" mode="aspectFit"></image>
+			<view class="item-cont">
+				<text>电影名：1111111</text>
+				<text>导演：222222</text>
+				<text>年份：2017</text>
+			</view>
+		</view> -->
+		<view class="nodata" wx:if="{{ resSearch }}">搜索没有该结果</view>
+	</view>
+</view>

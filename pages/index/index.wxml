@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+   <swiper class="swiper" indicator-dots="true"
+    autoplay="true" interval="2500" duration="500" circular="true" indicator-color="#87CEFA" indicator-active-color="#00ff00">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper> 
+  </view>
+  <view class="nav">
+      <view class="nav-box">
+        <navigator class="navigator" url="../list/list?title=正在上映&name=in_theaters">
+          <view class="nav-item">
+            <a href="javascript:void(0);">
+              <image src="../../images/movie01.png" mode="aspectFill"></image>
+              <text class="nav-text">正在上映</text>
+            </a>
+          </view>
+        </navigator>
+        <navigator class="navigator" url="../list/list?title=即将上映&name=coming_soon">
+          <view class="nav-item">
+            <a href="javascript:void(0);">
+              <image src="../../images/movie02.png" mode="aspectFill"></image>
+              <text class="nav-text">即将上映</text>
+            </a>
+          </view>
+        </navigator>
+       <navigator class="navigator" url="../list/list?title=Top250&name=top250">
+          <view class="nav-item">
+            <a href="javascript:void(0);">
+              <image src="../../images/movie03.png" mode="aspectFill"></image>
+              <text class="nav-text">Top250</text>
+            </a>
+          </view>
+        </navigator>
+      </view>
+      <view class="nav-box">
+        <view class="nav-item">
+          <a href="javascript:void(0);">
+            <image src="../../images/home.png" mode="aspectFill"></image>
+            <text class="nav-text">首页</text>
+          </a>
+        </view>
+        <view class="nav-item">
+          <a href="javascript:void(0);">
+            <image src="../../images/home.png" mode="aspectFill"></image>
+            <text class="nav-text">首页</text>
+          </a>
+        </view>
+        <view class="nav-item">
+          <a href="javascript:void(0);">
+            <image src="../../images/home.png" mode="aspectFill"></image>
+            <text class="nav-text">首页</text>
+          </a>
+        </view>
+      </view>
+  </view>
+  <view class="main">
+      <view class="main-image-box">
+        <image class="main-image" src="../../images/c.jpg" mode="aspectFill"></image>
+      </view>
+      <view class="main-image-box">
+        <image class="main-image" src="../../images/c.jpg" mode="aspectFill"></image>
+      </view>
+      <view class="main-image-box">
+        <image class="main-image" src="../../images/c.jpg" mode="aspectFill"></image>
+      </view>
+  </view>
+  <view class="footer">
+    技术支持：1111111111111
+  </view>
+</view>

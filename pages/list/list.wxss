@@ -1,0 +1,78 @@
+.search-box {
+	height: 80rpx;
+	position: relative;
+	padding: 16rpx;
+	display: flex;
+	flex-direction: row;
+}
+.search-box .input-search {
+	box-sizing: border-box;
+	border-radius: 10rpx;
+	border: 1px solid #ccc;
+	height: 80rpx;
+	line-height: 80rpx;
+	padding-left: 12rpx;
+	font-size: 30rpx;
+	color: #333;
+	flex: 1;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.search-box .btn-search {
+	width: 160rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	background-color: #efefef;
+	font-size: 30rpx;
+	color: #555;
+	border: 1px solid #ccc;
+	border-left: 0;
+	box-sizing: border-box;
+	border-radius: 10rpx;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.item {
+	width: 100%;
+	position: relative;
+}
+.item .item-list {
+	/*width: 100%;*/
+	height: 200rpx;
+	display: flex;
+	flex-direction: row;
+	background-color: #efefef;
+  	padding: 20rpx;
+  	margin: 20rpx;
+}
+.item .item-list .item-image {
+	width: 200rpx;
+	height: 200rpx;
+	display: block;
+}
+.item .item-list .item-cont {
+	/*width: 100%;*/
+	height: 200rpx;
+	flex: 1;
+	display: flex;
+	flex-direction:column;
+	margin-left: 16rpx;
+}
+.item .item-list .item-cont text {
+	height: 66rpx;
+	line-height: 66rpx;
+	flex: 1;
+	font-size: 30rpx;
+	color: #333;
+}
+.item .tishi,
+.item .nodata {
+	width: 100%;
+	height: 90rpx;
+	line-height: 90rpx;
+	text-align: center;
+	font-size: 32rpx;
+	color: #555;
+	background-color: #efefef;
+}

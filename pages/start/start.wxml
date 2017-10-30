@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="img-box">
+    <image src="{{userInfo.avatarUrl}}" mode=""></image>
+  </view>
+  <view class="text-box">
+    <text>{{ userInfo.nickName }}</text>
+    <button bindtap="startTap">开启小程序</button>
+  </view>
+</view>

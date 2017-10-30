@@ -1,0 +1,11 @@
+<view class="container">
+	<view class="tit-box">
+		<text>{{ arrList.title }}</text>
+	</view>
+	<view class="img-box">
+		<image src="{{ arrList.images.large }}" mode="aspectFit"></image>
+	</view>
+	<view class="cont-box">
+		<text>{{ arrList.summary }}</text>
+	</view>
+</view>
