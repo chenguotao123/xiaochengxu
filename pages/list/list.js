@@ -144,6 +144,8 @@ Page({
       resSearch:false
     })
     this.sendRequest()
-    wx.stopPullDownRefresh()
+    setTimeout(function () {
+      wx.stopPullDownRefresh()
+    },600)
   }
 })
